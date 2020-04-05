@@ -363,7 +363,7 @@
 </ul>
 </li>
 <li><strong>消息流转</strong><ul>
-<li>结合ZSET + List，同时job元数据存放在hash中，固整个流程如图<br><img src="https://github.com/nereus-east/nereus-sea/blob/master/redis-blocking-delay-queue/%E5%BB%B6%E8%BF%9F%E9%98%9F%E5%88%97.jpg?raw=true" alt="消息流转图例"></li>
+<li>结合ZSET + List，同时job元数据存放在hash中，固整个流程如图<br><img src="https://github.com/nereus-east/nereus-sea/blob/master/redis-blocking-delay-queue/%E5%BB%B6%E8%BF%9F%E9%98%9F%E5%88%97Redis%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%9B%BE.jpg?raw=true" alt="消息流转图例"></li>
 </ul>
 </li>
 <li><strong>避免轮询</strong><ul>
@@ -403,6 +403,7 @@
 </ul>
 </li>
 </ol>
+<h4 id="简单图示"><a href="#简单图示" class="headerlink" title="简单图示"></a>简单图示</h4><p><img src="https://github.com/nereus-east/nereus-sea/blob/master/redis-blocking-delay-queue/%E5%BB%B6%E8%BF%9F%E9%98%9F%E5%88%97%EF%BC%8C%E6%95%B0%E6%8D%AE%E6%B5%81%E8%BD%AC.jpg?raw=true" alt="数据流转"></p>
 <h4 id="设计优点"><a href="#设计优点" class="headerlink" title="设计优点"></a>设计优点</h4><ol>
 <li>性能好，性能基本上以用户的消费速率决定</li>
 <li>开销不大，避免了轮询</li>
